@@ -5,6 +5,6 @@
 3. Redux 實作：Todo List app 結合 redux (Demo-03)
 
 ## 參考：
-- [Redux 文件](https://redux.js.org)
+- [Redux 文件](https://redux.js.org)
 - [Redux 作者的教學影片 - Getting Started with Redux](https://egghead.io/courses/getting-started-with-redux)
 - [寫React的那些事系列](https://ithelp.ithome.com.tw/articles/10185815)

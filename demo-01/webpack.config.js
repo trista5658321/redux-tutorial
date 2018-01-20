@@ -8,11 +8,11 @@ module.exports = {
         filename: 'bundle.[hash].js'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
-                exclude: /node_modules/,
                 loader: 'babel-loader',
+                exclude: /node_modules/,
                 query: {
                     presets: ['es2015', 'react']
                 }
@@ -20,7 +20,6 @@ module.exports = {
         ]
     },
     plugins: [
-        new webpack.optimize.OccurrenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin()
     ]
