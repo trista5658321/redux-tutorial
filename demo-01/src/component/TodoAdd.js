@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 
 class TodoAdd extends Component {
     constructor(props) {
@@ -17,7 +18,7 @@ class TodoAdd extends Component {
                     type="text"
                     ref={(input) => { this.addInput = input; }}
                 />
-                <button onClick={this._onAddClick}>Create</button>
+                <button className={classNames('add')} onClick={this._onAddClick}>Create</button>
             </div>
         );
     }

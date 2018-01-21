@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px;
+    background-color: #fafafa;
+    color: #3c4858;
+    font-size: 16px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+input + button, button + button {
+    margin-left: 8px;
+}
+
+table{
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+th{
+    text-align: left;
+    padding-bottom: 10px;
+}
+tr{
+    border-bottom: 1px solid #ccc;
+}
+td{
+    padding: 10px 0;
+}
+th + th, td + td{
+    padding-left: 15px;
+}
+
+.task {
+    cursor: pointer;
+}
+
+.task-completed {
+    color: #888;
+    text-decoration: line-through;
+}

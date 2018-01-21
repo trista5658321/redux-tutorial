@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import classNames from 'classnames';
 
 class TodoItem extends Component {
     constructor(props) {
@@ -23,10 +24,11 @@ class TodoItem extends Component {
     }
     render() {
         const { todo, idx, deleteTask, completeTask } = this.props;
-        const taskStyle = {
-            color: todo.isCompleted ? '#888' : '#000',
-            textDecoration: todo.isCompleted ? 'line-through' : ''
-        };
+        const taskClass = classNames({
+            task: true,
+            'task-completed': todo.isCompleted
+        });
+        
         return this.state.isEditing ?
             (
                 <tr>
@@ -48,7 +50,7 @@ class TodoItem extends Component {
             (
                 <tr>
                     <td>
-                        <span style={taskStyle}>{todo.task}</span>
+                        <span className={taskClass}>{todo.task}</span>
                     </td>
                     <td>
                         <button onClick={ this._onEditClick }>Edit</button>
